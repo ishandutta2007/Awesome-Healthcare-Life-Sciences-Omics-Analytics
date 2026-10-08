@@ -1,62 +1,35 @@
-# Awesome-Healthcare-Life-Sciences-Omics-Analytics
-
 # Awesome-Healthcare-Life-Sciences-Omics-Analytics 🧬 📊
 
 
-
 <p align="center">
-
   <img src="assets/banner.svg" alt="Awesome Healthcare Life Sciences Omics Analytics Banner" width="100%">
-
 </p>
-
 
 
 <p align="center">
-
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
-
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-
   <a href="https://github.com/ishandutta2007/Awesome-Healthcare-Life-Sciences-Omics-Analytics"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Healthcare-Life-Sciences-Omics-Analytics?style=social" alt="GitHub_Stars"/></a>
-
   <a href="https://github.com/ishandutta2007/Awesome-Healthcare-Life-Sciences-Omics-Analytics/fork"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Healthcare-Life-Sciences-Omics-Analytics?style=social" alt="GitHub Forks"/></a>
-
   <a href="https://github.com/ishandutta2007/Awesome-Healthcare-Life-Sciences-Omics-Analytics/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Healthcare-Life-Sciences-Omics-Analytics?color=blue" alt="License"/></a>
-
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
-
 </p>
-
-
 
 ---
 
-
-
 ## 🌟 Top Healthcare & Life Sciences Omics Analytics Ecosystem
-
-
 
 **Curated List of Commercial Omics Platforms & Open-Source Bioinformatics Tools**  
 
 *Focused on Genomics Pipelines, Variant Calling, RNA-Seq, Single-Cell Analysis, Multi-Omics Integration & Self-Hosted Bioinformatics Infrastructure*
 
-
-
 **Last updated: October 2026** 📅
 
-
-
 ---
-
-
 
 ### 📌 Overview & SEO Summary
 
 Welcome to the ultimate curated directory of **omics analytics platforms**, **open-source bioinformatics tools**, and **genomic data pipelines**. Whether you are looking for enterprise-grade commercial solutions (such as *Amazon Omics*, *DNAnexus*, and *Terra Cloud*), or self-hostable open-source alternatives (like *Nextflow*, *Galaxy*, and *Bioconductor*), this list covers category leaders, variant calling, and privacy-respecting genomics infrastructure.
-
-
 
 **Key Market Context:**
 
@@ -66,27 +39,16 @@ Welcome to the ultimate curated directory of **omics analytics platforms**, **op
 
 - **Bioconductor** is the **foundational open-source R ecosystem for genomics**, with **2,000+ packages** for **RNA-Seq, single-cell, and multi-omics analysis**.
 
-
-
 ---
-
-
 
 ## 📑 Table of Contents
 
 - [🏢 SaaS & Commercial Platforms](#-saas--commercial-platforms)
-
 - [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
-
 - [🛠️ How to Contribute](#%EF%B8%8F-how-to-contribute)
-
 - [📊 Star History](#-star-history)
-
 - [🤝 Support & Sponsorship](#-support--sponsorship)
-
 - [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
-
-
 
 ---
 
@@ -99,29 +61,17 @@ Welcome to the ultimate curated directory of **omics analytics platforms**, **op
 The omics analytics market spans **hyperscaler omics services** (Amazon Omics) that provide **managed genomics storage and analytics**, **bioinformatics platform providers** (DNAnexus, Seven Bridges, Terra) that offer **cloud-native pipelines and collaboration**, and **integrated omics platforms** (Illumina Connected Analytics, BC Platforms) that combine **sequencing instruments with analysis software**. **Amazon Omics** charges **$0.005/GB-month for storage** and **$0.0001/GB for compute** . **DNAnexus** uses **custom enterprise pricing** . **Terra Cloud** is **free to use** — you pay only for underlying cloud resources . **Seven Bridges** uses **custom enterprise pricing** . **Illumina Connected Analytics** starts at **$10,000/year** for the BaseSpace Sequence Hub .
 
 
-
 | SaaS / Commercial Platform | Company / Owner | Valuation / Market Cap | Standard Edition Starting Price | Free Tier / Free Trial Limits | Description |
-
 | :--- | :--- | :--- | :--- | :--- | :--- |
-
 | **[Amazon Omics](https://aws.amazon.com/omics/)** ☁️ | Amazon | ~$2.0 Trillion | **$0.005/GB-month** (storage) + **$0.0001/GB** (compute)  | **Free tier: limited** | **AWS-native omics service** — **Managed genomics storage and analytics** . **Supports FASTA, FASTQ, BAM, CRAM, and VCF** . **Ready-to-use bioinformatics workflows** . **Multi-omics data lake** . |
-
 | **[Illumina Connected Analytics](https://www.illumina.com/)** 🧬 | Illumina | ~$20 Billion | **$10,000/year** (BaseSpace Sequence Hub) | **Free trial available** | **Illumina-native omics platform** — **Integrated with Illumina sequencers** . **BaseSpace Sequence Hub for analysis** . **DRAGEN bioinformatics pipeline** . |
-
 | **[DNAnexus](https://www.dnanexus.com/)** 🔵 | DNAnexus | Private | **Custom enterprise pricing** | **Free trial available** | **Cloud-native bioinformatics platform** — **Supports genomics, transcriptomics, and proteomics** . **Compliance (HIPAA, GDPR, CLIA)** . **Used by 10,000+ researchers** . |
-
 | **[Seven Bridges](https://www.sevenbridges.com/)** 🟢 | Seven Bridges (Velsera) | Private | **Custom enterprise pricing** | **Free trial available** | **Bioinformatics platform** — **Cloud-native pipelines and collaboration** . **Supports large-scale genomics analysis** . |
-
 | **[Terra Cloud](https://terra.bio/)** 🌐 | Broad Institute | N/A (Open Source) | **Free platform**; pay for cloud resources  | **Free tier: limited** | **Open-source genomics platform** — **Powered by Broad Institute** . **WDL-based pipelines** . **AnVIL for NHGRI data** . **Free to use** . |
-
 | **[Velsera](https://velsera.com/)** 🔬 | Velsera | Private | **Custom enterprise pricing** | **Demo available** | **Clinical and research genomics platform** — **Combines Seven Bridges and PierianDx** . **Clinical-grade variant interpretation** . |
-
 | **[LatchBio](https://latch.bio/)** 🎯 | Latch Bio | Private | **Custom pricing** | **Free trial available** | **Bioinformatics workflow platform** — **Python-native pipelines** . **User-friendly interface for wet-lab scientists** . |
-
 | **[BC Platforms](https://www.bcplatforms.com/)** 📊 | BC Platforms | Private | **Custom enterprise pricing** | **Demo available** | **Genomics data management** — **Biobank and cohort management** . **Analysis and collaboration platform** . |
-
 | **[BaseSpace Sequence Hub](https://www.illumina.com/products/by-type/informatics-products/basespace-sequence-hub.html)** 🧪 | Illumina | ~$20 Billion | **$10,000/year** (starting) | **Free: 1 TB storage, limited analysis** | **Illumina sequencing analysis** — **Cloud-based analysis of sequencing data** . **DRAGEN pipeline integration** . **The default analysis platform for Illumina sequencers** . |
-
 | **[Qiagen Digital Insights](https://digitalinsights.qiagen.com/)** 🧫 | Qiagen | ~$10 Billion | **Custom enterprise pricing** | **Free trial available** | **Bioinformatics analysis platform** — **NGS, Sanger, and PCR analysis** . **Clinical interpretation support** . |
 
 
