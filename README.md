@@ -33,9 +33,9 @@ Welcome to the ultimate curated directory of **omics analytics platforms**, **op
 
 **Key Market Context:**
 
-- **Nextflow** is the **de facto standard for bioinformatics pipelines**, with **3K+ GitHub stars** and **used by 100K+ researchers worldwide** — **Seqera Platform provides managed orchestration**.
+- **Nextflow** is the **de facto standard for bioinformatics pipelines**, with **3K+ GitHub_Stars** and **used by 100K+ researchers worldwide** — **Seqera Platform provides managed orchestration**.
 
-- **Galaxy** is the **most widely used open-source bioinformatics platform**, with **1.4K+ GitHub stars** and **thousands of tools for genomics, proteomics, and metabolomics**.
+- **Galaxy** is the **most widely used open-source bioinformatics platform**, with **1.4K+ GitHub_Stars** and **thousands of tools for genomics, proteomics, and metabolomics**.
 
 - **Bioconductor** is the **foundational open-source R ecosystem for genomics**, with **2,000+ packages** for **RNA-Seq, single-cell, and multi-omics analysis**.
 
@@ -90,7 +90,7 @@ The omics analytics market spans **hyperscaler omics services** (Amazon Omics) t
 
 - **[Nextflow](https://github.com/nextflow-io/nextflow)** [![Stars](https://img.shields.io/github/stars/nextflow-io/nextflow?style=social&color=white)](https://github.com/nextflow-io/nextflow/stargazers)  
 
-  **Data-driven computational pipelines for bioinformatics**, Apache-2.0 licensed. **3K+ GitHub stars** — **the de facto standard for bioinformatics pipelines** . **Used by 100K+ researchers worldwide** . **Portable across cloud and on-premises** . **Container-native (Docker, Singularity)** . **Reproducible, scalable, and auditable** . **Seqera Platform provides enterprise management** . **The definitive open-source bioinformatics pipeline framework** . 🧬
+  **Data-driven computational pipelines for bioinformatics**, Apache-2.0 licensed. **3K+ GitHub_Stars** — **the de facto standard for bioinformatics pipelines** . **Used by 100K+ researchers worldwide** . **Portable across cloud and on-premises** . **Container-native (Docker, Singularity)** . **Reproducible, scalable, and auditable** . **Seqera Platform provides enterprise management** . **The definitive open-source bioinformatics pipeline framework** . 🧬
 
 
 
@@ -102,13 +102,13 @@ The omics analytics market spans **hyperscaler omics services** (Amazon Omics) t
 
 - **[Galaxy Project](https://github.com/galaxyproject/galaxy)** [![Stars](https://img.shields.io/github/stars/galaxyproject/galaxy?style=social&color=white)](https://github.com/galaxyproject/galaxy/stargazers)  
 
-  **Open-source bioinformatics workflow platform**, Academic Free License. **1.4K+ GitHub stars** — **the most widely used open-source bioinformatics platform** . **Thousands of tools for genomics, proteomics, and metabolomics** . **Web-based interface for wet-lab scientists** . **The most accessible open-source bioinformatics platform** . 🌌
+  **Open-source bioinformatics workflow platform**, Academic Free License. **1.4K+ GitHub_Stars** — **the most widely used open-source bioinformatics platform** . **Thousands of tools for genomics, proteomics, and metabolomics** . **Web-based interface for wet-lab scientists** . **The most accessible open-source bioinformatics platform** . 🌌
 
 
 
 - **[Snakemake](https://github.com/snakemake/snakemake)** [![Stars](https://img.shields.io/github/stars/snakemake/snakemake?style=social&color=white)](https://github.com/snakemake/snakemake/stargazers)  
 
-  **Workflow management system for reproducible data analysis**, MIT licensed. **2K+ GitHub stars** — **Python-based workflow definition** . **The most Pythonic bioinformatics workflow engine** . 🐍
+  **Workflow management system for reproducible data analysis**, MIT licensed. **2K+ GitHub_Stars** — **Python-based workflow definition** . **The most Pythonic bioinformatics workflow engine** . 🐍
 
 
 
@@ -236,7 +236,7 @@ If you find this omics analytics repository useful, please consider supporting t
 
 - This is a **community-curated** list — not exhaustive and not an endorsement. ℹ️
 
-- **Nextflow is the de facto standard for bioinformatics pipelines** with **3K+ GitHub stars** and **used by 100K+ researchers worldwide** . **Galaxy is the most widely used open-source bioinformatics platform** with **1.4K+ GitHub stars** . **Bioconductor is the foundational R ecosystem** with **2,000+ packages** .
+- **Nextflow is the de facto standard for bioinformatics pipelines** with **3K+ GitHub_Stars** and **used by 100K+ researchers worldwide** . **Galaxy is the most widely used open-source bioinformatics platform** with **1.4K+ GitHub_Stars** . **Bioconductor is the foundational R ecosystem** with **2,000+ packages** .
 
 - **GATK is the gold standard for variant discovery** — **used by Broad Institute and thousands of genomics labs** . **Samtools and BCFtools are foundational toolkits** used by virtually every genomics pipeline .
 
