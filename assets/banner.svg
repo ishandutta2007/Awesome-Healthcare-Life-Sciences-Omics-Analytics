@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0d1b2a" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    
+    <filter id="glow-purple" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <style>
+      .title {
+        font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+        font-weight: 800;
+        font-size: 38px;
+        fill: url(#title-grad);
+        letter-spacing: -0.5px;
+      }
+      .subtitle {
+        font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        fill: #94a3b8;
+      }
+      .badge-text {
+        font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #38bdf8;
+      }
+      .card-title {
+        font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        fill: #64748b;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .card-value {
+        font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        fill: #f1f5f9;
+      }
+
+      /* Dynamic Animations */
+      @keyframes floatParticle {
+        0%, 100% { transform: translateY(0px) scale(1); opacity: 0.4; }
+        50% { transform: translateY(-15px) scale(1.1); opacity: 0.8; }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 0.6; transform: scale(1.05); }
+      }
+      @keyframes dnaRotate {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: 40; }
+      }
+      @keyframes chartPulse {
+        0%, 100% { height: 35px; y: 25px; }
+        50% { height: 45px; y: 15px; }
+      }
+
+      .particle { animation: floatParticle 6s ease-in-out infinite; }
+      .particle-delay-1 { animation-delay: 2s; }
+      .particle-delay-2 { animation-delay: 4s; }
+      
+      .bg-glow-1 { animation: pulseGlow 8s ease-in-out infinite; transform-origin: 200px 100px; }
+      .bg-glow-2 { animation: pulseGlow 10s ease-in-out infinite 3s; transform-origin: 1000px 300px; }
+
+      .dna-strand {
+        stroke-dasharray: 8, 8;
+        animation: dnaRotate 3s linear infinite;
+      }
+
+      .chart-bar-animated {
+        animation: chartPulse 4s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Base Dark Canvas -->
+  <rect width="1200" height="400" rx="16" fill="url(#bg-grad)"/>
+  
+  <!-- Subtle Grid Background overlay -->
+  <g opacity="0.05">
+    <path d="M0,50 H1200 M0,100 H1200 M0,150 H1200 M0,200 H1200 M0,250 H1200 M0,300 H1200 M0,350 H1200" stroke="#ffffff" stroke-width="1"/>
+    <path d="M100,0 V400 M200,0 V400 M300,0 V400 M400,0 V400 M500,0 V400 M600,0 V400 M700,0 V400 M800,0 V400 M900,0 V400 M1000,0 V400 M1100,0 V400" stroke="#ffffff" stroke-width="1"/>
+  </g>
+
+  <!-- Dynamic Ambient Glowing Orbs in Background Layer -->
+  <g class="bg-glow-1">
+    <circle cx="150" cy="80" r="140" fill="#0284c7" opacity="0.25" filter="url(#glow-cyan)" />
+  </g>
+  <g class="bg-glow-2">
+    <circle cx="1050" cy="320" r="160" fill="#6366f1" opacity="0.2" filter="url(#glow-purple)" />
+  </g>
+
+  <!-- DYNAMIC BACKGROUND ELEMENTS (Kept around edges / right side so foreground text at X=80, Y=140+ is 100% clear) -->
+
+  <!-- Animated DNA Helix Vector on Right Side -->
+  <g transform="translate(850, 60)" opacity="0.45">
+    <!-- Sine Wave Strand A -->
+    <path d="M 0,60 Q 40,0 80,60 T 160,60 T 240,60 T 300,60" fill="none" stroke="#38bdf8" stroke-width="3" />
+    <!-- Sine Wave Strand B -->
+    <path d="M 0,60 Q 40,120 80,60 T 160,60 T 240,60 T 300,60" fill="none" stroke="#818cf8" stroke-width="3" />
+    <!-- Base pairs connecting strands -->
+    <line x1="40" y1="30" x2="40" y2="90" stroke="#38bdf8" stroke-width="2" class="dna-strand" />
+    <line x1="120" y1="30" x2="120" y2="90" stroke="#818cf8" stroke-width="2" class="dna-strand" />
+    <line x1="200" y1="30" x2="200" y2="90" stroke="#c084fc" stroke-width="2" class="dna-strand" />
+  </g>
+
+  <!-- Floating Bio-Analytics Interactive Cards (Positioned lower right corner) -->
+  <g transform="translate(760, 210)" filter="url(#card-shadow)">
+    <!-- Card 1: Pipeline Orchestration -->
+    <rect x="0" y="0" width="180" height="110" rx="12" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+    <rect x="0" y="0" width="180" height="110" rx="12" fill="url(#title-grad)" opacity="0.05"/>
+    <text x="16" y="28" class="card-title">Pipelines</text>
+    <text x="16" y="54" class="card-value">Nextflow / WDL</text>
+    <path d="M 16 80 Q 40 65 60 75 T 110 60 T 164 70" fill="none" stroke="#38bdf8" stroke-width="2.5" />
+    <circle cx="164" cy="70" r="4" fill="#38bdf8" filter="url(#glow-cyan)"/>
+  </g>
+
+  <g transform="translate(965, 180)" filter="url(#card-shadow)">
+    <!-- Card 2: Omics Multi-Modal Analytics -->
+    <rect x="0" y="0" width="185" height="140" rx="12" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+    <rect x="0" y="0" width="185" height="140" rx="12" fill="url(#accent-grad)" opacity="0.04"/>
+    <text x="16" y="28" class="card-title">Genomics Analytics</text>
+    <text x="16" y="52" class="card-value">Single-Cell &amp; RNA</text>
+    
+    <!-- Mini Animated Bar Chart -->
+    <g transform="translate(16, 65)">
+      <rect x="0" y="35" width="14" height="25" rx="3" fill="#334155"/>
+      <rect x="0" y="20" width="14" height="40" rx="3" fill="#38bdf8" class="chart-bar-animated"/>
+
+      <rect x="22" y="35" width="14" height="25" rx="3" fill="#334155"/>
+      <rect x="22" y="10" width="14" height="50" rx="3" fill="#818cf8"/>
+
+      <rect x="44" y="35" width="14" height="25" rx="3" fill="#334155"/>
+      <rect x="44" y="30" width="14" height="30" rx="3" fill="#c084fc"/>
+
+      <rect x="66" y="35" width="14" height="25" rx="3" fill="#334155"/>
+      <rect x="66" y="5" width="14" height="55" rx="3" fill="#34d399"/>
+    </g>
+  </g>
+
+  <!-- Dynamic Floating Bio Particles -->
+  <circle cx="700" cy="100" r="4" fill="#38bdf8" class="particle" />
+  <circle cx="820" cy="180" r="6" fill="#818cf8" class="particle particle-delay-1" />
+  <circle cx="1140" cy="90" r="5" fill="#c084fc" class="particle particle-delay-2" />
+  <circle cx="730" cy="320" r="3" fill="#34d399" class="particle particle-delay-1" />
+
+  <!-- FOREGROUND CONTENT AREA (Protected Zone: Left side, clear contrast, zero occlusion) -->
+
+  <!-- Top Pill / Badge -->
+  <g transform="translate(80, 75)">
+    <rect x="0" y="0" width="250" height="32" rx="16" fill="#0f172a" stroke="#0284c7" stroke-width="1.5"/>
+    <circle cx="16" cy="16" r="5" fill="#38bdf8" filter="url(#glow-cyan)"/>
+    <text x="30" y="21" class="badge-text">HEALTHCARE &amp; LIFE SCIENCES</text>
+  </g>
+
+  <!-- Main Title (Foreground) -->
+  <text x="80" y="150" class="title">
+    Awesome Healthcare Life Sciences
+  </text>
+  <text x="80" y="195" class="title">
+    Omics Analytics 🧬 📊
+  </text>
+
+  <!-- Subtitle (Foreground) -->
+  <text x="80" y="245" class="subtitle">
+    Curated List of Commercial Omics Platforms &amp; Open-Source Bioinformatics Tools
+  </text>
+  
+  <text x="80" y="275" class="subtitle" font-size="15px" fill="#64748b">
+    Genomics Pipelines • Variant Calling • RNA-Seq • Single-Cell • Multi-Omics Integration
+  </text>
+
+  <!-- Footer Info Tags -->
+  <g transform="translate(80, 315)">
+    <!-- Tag 1 -->
+    <rect x="0" y="0" width="140" height="28" rx="6" fill="#1e293b" opacity="0.8"/>
+    <text x="12" y="18" font-family="Segoe UI, sans-serif" font-size="12px" fill="#cbd5e1" font-weight="500">⚡ Nextflow &amp; Galaxy</text>
+    
+    <!-- Tag 2 -->
+    <rect x="150" y="0" width="130" height="28" rx="6" fill="#1e293b" opacity="0.8"/>
+    <text x="162" y="18" font-family="Segoe UI, sans-serif" font-size="12px" fill="#cbd5e1" font-weight="500">🔬 Bioconductor</text>
+    
+    <!-- Tag 3 -->
+    <rect x="290" y="0" width="150" height="28" rx="6" fill="#1e293b" opacity="0.8"/>
+    <text x="302" y="18" font-family="Segoe UI, sans-serif" font-size="12px" fill="#cbd5e1" font-weight="500">☁️ Cloud Bioinformatics</text>
+  </g>
+
+</svg>
